@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi | salmanasis</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>KATIK <span>Kalkulator Matematik</span></h1>
+    </header>
+    <div class="container">
+        <h2 id="paragrafLuas">Welcome to Katik</h2>
+        <p id="paragrafLuas">Hai sobat, Selamat datang di Katik :)
+        <br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </p>
+
+        <section class="luasKelilingButtonSection">
+        <button class="btnLuasPersegi">Luas Persegi</button>
+        <button class="btnKelilingPersegi" onclick="jumpTo()">Keliling Persegi</button>
+        </section>
+        <!-- halaman Luas Persegi -->
+        <div id="containerLuas">
+            <h2>Luas Persegi</h2>
+            <figure>
+            <img src="assets/bujur-sangkar.jpeg">
+            <figcaption>Bujur Sangkar</figcaption>
+            </figure>
+    
+            <p id="paragraf">Rumus Luas Persegi yaitu :</p>
+            <p id="paragrafLuas"><b>L = S x S</b></p>
+            <p id="paragraf">Dimana :
+                <br>L = Luas
+                <br>S = Sisi
+            </p>
+            <hr>
+            <section class="luasInputSection">
+                <label for="inputFieldLuas">Hitung Luas Persegi</label>
+                <input id="inputFieldLuas" placeholder="Masukan sisi">
+            </section>
+            <div id="outputLuas"></div>
+            <section class="inputButtonSelection">
+                <button class="btnHitung" onclick="hitungLuas()">Hitung</button>
+                
+            </section>
+            
+            <section class="inputBtnReset">
+                <button class="btnReset" onclick="resetLuas()">Reset</button>
+            </section>
+        </div>
+        <!-- halaman Keliling Persegi -->
+        <div id="containerLuas">
+            <h2>Luas Persegi</h2>
+            <figure>
+            <img src="assets/bujur-sangkar.jpeg">
+            <figcaption>Bujur Sangkar</figcaption>
+            </figure>
+    
+            <p id="paragraf">Rumus Luas Persegi yaitu :</p>
+            <p id="paragrafLuas"><b>L = S x S</b></p>
+            <p id="paragraf">Dimana :
+                <br>L = Luas
+                <br>S = Sisi
+            </p>
+            <hr>
+            <section class="luasInputSection">
+                <label for="inputFieldKeliling">Hitung Luas Persegi</label>
+                <input id="inputFieldKeliling" placeholder="Masukan sisi">
+            </section>
+            <div id="outputKeliling"></div>
+            <section class="inputButtonSelection">
+                <button class="btnHitung" onclick="hitungKeliling()">Hitung</button>
+                
+            </section>
+            
+            <section class="inputBtnReset">
+                <button class="btnReset" onclick="resetKeliling()">Reset</button>
+            </section>
+        </div>
+        </div>    
+    </div>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
